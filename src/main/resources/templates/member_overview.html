@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=10">
+		<meta http-equiv="X-UA-Comatible" content="ie=edge">
+		<title>member_mail.html</title>
+		<link rel="stylesheet" href="./css/member_mail.css">
+		<link rel="stylesheet" href="./css/aside.css">
+		<link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+		<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+		<script src="./js/echarts.min.js"></script>
+		<style>
+			#myecharts {
+				background-color: #f0f0f0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="aside">
+			<img src="./images/logo.png" alt="">
+			<ul>
+				<li class="bubian"><a href="redirect?page=member_mail">邮件信息</a></li>
+				<li class="bian"><a href="redirect?page=member_overview">邮件概况</a></li>
+				<li class="bubian"><a href="redirect?page=member_forecast">邮件预测</a></li>
+				<li class="bubian"><a href="redirect?page=member_setting">个人中心</a></li>
+			</ul>
+		</div>
+		<div class="head"></div>
+		<div class="main">
+			<div class="layui-tab layui-tab-card" style="margin: 0px">
+				<ul class="layui-tab-title">
+					<li class="layui-this">占比</li>
+					<li>域名</li>
+					<li>主题词频</li>
+					<li>正文词频</li>
+					<li>文本大小</li>
+					<li>其他特征</li>
+				</ul>
+				<div class="layui-tab-content" style="height: 605px;">
+					<div class="layui-tab-item layui-show">
+						<div id="zhanbi" style="width: 700px; height:500px">
+
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="layui-tab-item layui-show">
+							<div id="yuming" style="width: 700px; height:500px">
+
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="layui-tab-item layui-show">
+							<div id="zhuti" style="width: 700px; height:500px">
+
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="layui-tab-item layui-show">
+							<div id="zhengwen" style="width: 700px; height:500px">
+
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="layui-tab-item layui-show">
+							<div id="wenben" style="width: 700px; height:500px">
+
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="layui-tab-item layui-show">
+							<div id="qita" style="width: 700px; height:500px">
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://www.layuicdn.com/layui/layui.js"></script>
+		<script src="./js/overview.js"></script>
+		<script src="./js/member_overview.js"></script>
+	</body>
+</html>

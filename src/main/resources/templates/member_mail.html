@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>member_mail.html</title>
+		<link rel="stylesheet" href="./css/member_mail.css">
+		<link rel="stylesheet" href="./css/aside.css">
+		<link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+		<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+		<script src="https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc"></script>
+
+	</head>
+	<body>
+
+		<div class="aside">
+			<img src="./images/logo.png" alt="">
+			<ul>
+				<li class="bian"><a href="redirect?page=member_mail">邮件信息</a></li>
+				<li class="bubian"><a href="redirect?page=member_overview">邮件概况</a></li>
+				<li class="bubian"><a href="redirect?page=member_forecast">邮件预测</a></li>
+				<li class="bubian"><a href="redirect?page=member_setting">个人中心</a></li>
+			</ul>
+		</div>
+		<div class="head"></div>
+		<div class="main">
+
+			<form class="layui-form">
+				<table class="layui-table">
+					<colgroup>
+						<col width="150">
+						<col width="200">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								<div class="checkallbox">
+									<input lay-skin="primary" type="checkbox" id="checkall" name="type" lay-filter="allChoose" value="checkall" />
+									<input type="button" id="Delete" name="Delete" value=" 删 除 " style="margin-left: 5px" />
+								</div>
+							</th>
+							<th>发件人</th>
+							<th>主题</th>
+							<th>时间</th>
+							<th>是否为垃圾邮件</th>
+
+						</tr>
+					</thead>
+					<tbody id="mail-info">
+						
+						
+					</tbody>
+				</table>
+			</form>
+
+
+			<script src="https://www.layuicdn.com/layui/layui.js"></script>
+
+
+
+			<script type="text/javascript" src="./js/member_mail.js"></script>
+
+	</body>
+</html>
